@@ -1,0 +1,149 @@
+body {
+  margin: 5% 15%;
+}
+
+.c-wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;  
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.c-wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.c-search {
+  background: lightblue;
+  text-align: center;
+}
+
+.c-search_button {
+	background: orange;
+}
+
+.c-header {
+  /*background: tomato;*/
+}
+
+.c-main-box {
+	text-align: left;
+	background: rgb(233,233,233);
+  margin-bottom: 1rem;
+}
+.c-main-box {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+/*.c-main-box, .c-main_content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}*/
+
+.c-main_content {
+	/*flex-direction: column;*/
+  /*display: flex;*/
+}
+
+/*.c-main-box, .c-main_content > * {
+  padding: 10px;
+  flex: 1 100%;
+}*/
+
+.c-main-box > * {
+	padding: 10px;
+  flex: 1 100%;
+}
+ 
+.c-main_text_box {
+ 	flex: 1 auto;
+ 	width: 35%;
+}
+
+.c-main_image_box {
+	/*width: 50%;*/
+  float: right;
+}
+
+.c-image {
+	display: block;
+}
+
+.c-main_button {
+	margin: 10% 0;
+}
+
+.c-information-box.c-infomation-special-box {
+  margin-bottom: 1rem;
+}
+
+.c-infomation-special-box {
+  background: deepskyblue;
+}
+
+.c-information-special-box__content {
+  color: rgb(255,255,255);
+}
+
+.c-information-box.c-information-general-box {
+  margin:0rem 1rem 1rem 1rem;
+}
+
+.c-information-general-box {
+  background: rgb(233,233,233);
+}
+
+.c-footer {
+
+}
+
+.c-service_box .c-service_text {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.c-title {
+	font-weight: bold;
+}
+
+.c-search_box {
+	font-style: italic;
+}
+
+@media all and (min-width: 600px) {
+  .c-information-box { 
+  	flex: 1 1; 
+  }
+}
+
+@media all and (min-width: 800px) {
+  .c-infomation-special-box { 
+  	order: 3; 
+  } 
+  .c-main-box { 
+  	flex: 3 0px;
+  	order: 1; 
+  }
+  .c-information-general-box { 
+  	order: 2; 
+  }
+  .c-footer { 
+  	order: 4; 
+  }
+}
+

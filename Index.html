@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" href="Index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="Index.js"></script>
+  </head>
+  <body>
+    <div class="c-wrapper">
+      <div class="c-search">
+        <form class="c-search_form">
+          <input class="c-search_box" type="text" placeholder="Ange stad eller land">
+          <button class="c-search_button">knappen</button>
+        </form>
+      </div>
+      <header class="c-header">
+        <h1>Information om <span class="c-title">London</span></h1>
+      </header>
+      <div class="c-main-box">
+        <h2>Hamnstaden vid Themsen</h2>
+        <div class="c-main_content">
+          <div class="c-main_image_box">
+            <img src="Assets/london.jpg" height="150px" width="200px" class="c-image">
+            <button class="c-main_button">Läs mer</button>
+          </div>
+          <div class="c-main_text_box">
+            <p>London är huvudstaden i Storbritnannien. Staden grundandes under namnet Londinium som huvudstad i den romerska provinsen Britannia, för vilken den också utgjorde hamnstad vid floden Themsen.</p> 
+          </div>
+        </div>
+      </div>
+      <div class="c-information-box c-infomation-special-box">
+          <div class="c-information-special-box__content">
+            <h2>Störst i EU</h2>
+            <p>London är EU:s största metropol med sina 8.4 miljoner invånare (2013), och med förorter cirka 13 miljoner invånare vid folkräkningen 2001.</p>
+            <p>Vid folkräkningen 2001 var nästan 22 procent av befolkningen född utanför EU.</p>
+          </div>
+      </div>
+      <div class="c-information-box c-information-general-box">
+        <div class="c-information-general-box__content">
+          <h2>City of London</h2>
+          <p>City of London är Londons historiska centrum och är en egen stad inom Storlondon, med speciella rättigheter som Storlondons 32 kommuner (boroughs) inte åtnjuter.</p>
+        </div>
+      </div>
+      <footer class="c-footer">
+        <div class="c-service_box" onclick="hideAndShowText()"> 
+          <span class="c-service_text">Om tjänsten</span>
+        </div>
+        <div class="c-service_text_box" id="service_text_box"> 
+          <p class="c-service_text">All information om städerna är hämtad från <a href="/" class="c-service_link">Wikipedia</a>. Nunc faucibus, lacus id eleifend aliquet, lectus erat luctus tellus, non maximus tortor sem vel felis. Donec pellentesque consectetur augue, non sollicitudin sapien convallis eget.</p>
+          <p>Pellentesque tristique semper euismod. Pellentesque scelerisque, urna quis hendrerit malesuada, justo nisl aliquam lorem, fringilla facilisis diam lacus vitae ex.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
